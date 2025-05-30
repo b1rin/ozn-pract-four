@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
             if (pthread_create(&thread[i], NULL, &routine, data)) return EXIT_FAILURE;
             printf("%d started working\n", data->index+1);
         }
-        for (int j = 0; j < 50; j++) printf("=");
+        for (int j = 0; j < 20; j++) printf("=");
         printf("\n");
         
         for (i = 0; i < 5; i++) {
